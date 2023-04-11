@@ -1,0 +1,11 @@
+Version: 1
+
+Logging:
+  LogLevel: "info"
+
+Region: "us-east-1"
+
+Resources:
+  - Metadata:
+      - "xray"
+     

@@ -26,8 +26,8 @@ services:
       #REACT_APP_BACKEND_URL: "https://${CODESPACE_NAME}-4567.${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}"
       REACT_APP_AWS_PROJECT_REGION: "us-east-1"
       REACT_APP_AWS_COGNITO_REGION: "us-east-1"
-      REACT_APP_AWS_USER_POOLS_ID: "us-east-1_vdCuxrZnL"
-      REACT_APP_CLIENT_ID: "2br5f26c3c4jp005ig7hdclrol"
+      REACT_APP_AWS_USER_POOLS_ID: "us-east-1_FSfBpHXK6"
+      REACT_APP_CLIENT_ID: "47gr5btc9fdvtiv0hliujt18jb"
     build: ./frontend-react-js
     ports:
       - "3000:3000"
@@ -38,7 +38,7 @@ services:
     environment:
       AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
       AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
-      AWS_REGION: "ca-central-1"
+      AWS_REGION: "us-east-1"
     command:
       - "xray -o -b xray-daemon:2000"
     ports:
